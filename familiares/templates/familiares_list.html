@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVT_MOTTA</title>
+</head>
+<body>
+    <h1 style="color:green;">Familiares:</h1> 
+    {% for f in familiares %}
+    <h2 style="color: blue;">Familiar:</h2> 
+    <p>{{ f.nombre}}</p>
+    <h2 style="color: blue;">Fecha de Nacimiento:</h2>
+    <p>{{f.fecha_nacimiento}}</p>
+    <h2 style="color: blue;">Numero Favorito:</h2> 
+    <p>{{ f.numero_fav}}</p>
+    <h2 style="color: blue;">Banda Favorita:</h2>
+    <p>{{f.banda_fav}}</p>
+    ----------------------------------------------------------------------------------------------------------------
+    {% endfor %}
+</body>
+</html>
